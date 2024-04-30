@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-image: url('{{ url_for('static', filename='music_background_figma.png') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    text-align: center;
+    background-color: #EFEFEF;
+    font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+    font-weight: bold; /* Make the text bold */
+    font-size: 20px;
+    color: black; /* Set text color to black */
+}
+
+.navbar a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar a:hover {
+    /*background-color: #FF85AC;*/
+    color: #FF85AC;
+}
+
+.content {
+    position: absolute;
+    top: 450px; /* Set the distance from the top */
+    left: 520px; /* Set the distance from the left */
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    background-color: #FF6C98; /* Set a lighter pink color for the input field */
+    color: #fff; /* Set text color to white */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+button {
+    background-color: #333; /* Set a dark color for the button */
+    color: #fff; /* Set text color to white */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+    font-weight: bold; /* Make the text bold */
+    font-size: 22px;
+    margin-top: 20px;
+    color: #F99200; /* Set a dark color for the subheading */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px;
+    color: #E12717; /* Set a slightly darker color for the text */
+}
+
+.pred {
+    position: absolute;
+    top: 550px; /* Set the distance from the top */
+    left: 520px; /* Set the distance from the left */
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.prediction-container {
+    position: absolute;
+    top: 70px; /* Set the distance from the top */
+    left: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.prediction-image {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between image and text */
+}
+
+.prediction-text {
+    margin-top: 10px;
+}
+

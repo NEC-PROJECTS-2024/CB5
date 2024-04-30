@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Feature Extraction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='music_background_figma.png') }}');">
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/help">Help</a>
+
+    </div>
+
+    <div class="content">
+        
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav" required>
+            <button type="submit">Upload</button>   
+        </form>
+
+        
+    </div>
+
+    <div class="pred">
+        {% if prediction %}
+            <h2>Prediction:</h2>
+            <div class="prediction-container">
+                <img src="{{ url_for('static', filename='music_wave.png') }}" alt="Prediction Image" class="prediction-image">
+                <p class="prediction-text">: The predicted class is -- {{ prediction }}</p>
+                
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

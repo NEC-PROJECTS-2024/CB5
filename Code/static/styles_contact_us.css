@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Updated font-family */
+    font-weight: 500; /* Updated font-weight to semi-bold */
+    color: white;
+    background-image: url('{{ url_for('static', filename='contact_us_figma.png') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    text-align: center;
+    background-color: #EFEFEF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.navbar a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar a:hover {
+    color: #FF85AC;
+}
+
+.custom-form {
+    position: absolute;
+    top: 320px;
+    left: 690px;
+    width: 330px;
+    height: 300px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; /* Updated font-family */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    position: absolute;
+    left: 40%;
+    background-color: #FF85AC;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500; /* Updated font-weight to semi-bold */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form_submit {
+    position: absolute;
+    top: 670px;
+    left: 750px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Updated font-family */
+    font-weight: 500; /* Updated font-weight to semi-bold */
+    color: rgb(118, 24, 24);
+
+}

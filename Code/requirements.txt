@@ -1,0 +1,9 @@
+Flask
+librosa
+pandas
+numpy
+joblib
+keras
+tensorflow
+Flask-SQLAlchemy
+pyodbc

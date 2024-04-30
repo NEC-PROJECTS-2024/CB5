@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_about.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='about_background_figma.png') }}');">
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/help">Help</a>
+
+    </div>
+    <div class="image_holder">
+        <img src="{{ url_for('static', filename='about_content.png') }}" alt="Description of the image">
+    </div>
+ 
+
+</body>
+</html>
